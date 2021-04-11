@@ -3,7 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 const forecast = require("./WheatherAPP/app.js")
 
-const app = express()
+//const app = express()
 
 const publicdirectory = path.join(__dirname, '../public')
 const partialPath = path.join(__dirname, '../views/partials')

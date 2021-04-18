@@ -3,7 +3,9 @@ const express = require('express')
 const hbs = require('hbs')
 const forecast = require("./WheatherAPP/app.js")
 
-//const app = express()
+const app = express()
+
+const port = process.env.PORT || 3000
 
 const publicdirectory = path.join(__dirname, '../public')
 const partialPath = path.join(__dirname, '../views/partials')
@@ -89,6 +91,15 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000...')
+app.listen(port, () => {
+    console.log('Server is up on port '+port)
 })
+
+/*ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC783AfU2wKWh2jSeteGOY6I4QVURTXTKrAv6Dk3CQXvjGLfmx
+1VuTYaxs6GR3U4+deEYsIoVsVlCz8eUUNv5NXyEGvVYyFou24ZhyPPuhL/mVTpt5YsiZs+OOCra9DMgxwooPzVty
+iRZsFMTv23uJmRNvqD+4XuWhbhDVB3nSdb4AwsckbQqOh1rLjUNTchEtry6jmpRTRcsWVpn42p5N0ZdQhaT1XzbX8AQjj
+3nwdHADWfMuC2tINmGHsNAsWk/61r9eQlDEcKx/EwFZ//HiYu68O+VYpEoqnkHx594zDOBynzFhZZxj7MerW0ieSR3Do4W
+MbHxf24ktywNzo3Yt7En6bsXigPL+8lUMeAhQiXo+DWLSGYzkrVrEoZrL1NkXssG8CHesfDq116yPyIK/l/AXd2ZtA9eGtXP
+VW9dezugtfsjrQTRiQb4slL7d4ijZbe58n+3RTC3OH/9qqZMBtbgLEugcEF/nbMpffTBUDetygq1zCHatlRdlh00B4N0IYRjb
+BBsOKHEVjR02vTm61qNezuxeIxCVx9wEQIlZQAlX7CGpyT7ZTsn3EK5wBoTgoVyYvwsii+5LuhxwAKSfVnZIPYcq6PKSELNgd
+Gh9XOTEEjffd5TRkxpUOmy4onUFFPFC9aAYHv9sNbtJWkQWlFqbR5YfbnXonpBmFgOQjNQ== rajkumargaunder.rkg.rkg@gmail.com*/

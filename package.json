@@ -1,0 +1,22 @@
+{
+  "name": "dummp",
+  "version": "1.0.0",
+  "description": "a little test app",
+  "main": "index.js",
+  "scripts": {
+   "start":"node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RKGHD625/nodejs-3-webserver.git"
+  },
+  "keywords": [
+    "ninjas"
+  ],
+  "author": "raj kumr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RKGHD625/nodejs-3-webserver/issues"
+  },
+  "homepage": "https://github.com/RKGHD625/nodejs-3-webserver#readme"
+}
